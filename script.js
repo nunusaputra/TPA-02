@@ -24,12 +24,14 @@ tombol.addEventListener('click', function() {
     if(tinggiStatus && beratStatus) {
         const bmi = (berat / ((tinggi*tinggi)/10000)).toFixed(2);
 
-        if(bmi < 18.6) {
-            hasil.innerHTML = 'Berat badan kamu kurang (Under Weight) : ' + bmi;
-        } else if (bmi >= 18.6 && bmi < 24.9) {
-            hasil.innerHTML = 'Berat badan kamu normal : ' + bmi;
-        } else {
+        if(bmi < 18.5) {
+            hasil.innerHTML = 'Berat badan kamu kurang (Underweight) : ' + bmi;
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            hasil.innerHTML = 'Berat badan kamu normal (Normal Weight) : ' + bmi;
+        } else if (bmi >= 25 && bmi <= 29.9) {
             hasil.innerHTML = 'Berat badan kamu over (Over Weight) : ' + bmi; 
+        } else {
+            hasil.innerHTML = 'Berat badan kamu sangat over (Obesity) : ' + bmi;
         }
     } else {
         alert('Masukan angka yang valid');
