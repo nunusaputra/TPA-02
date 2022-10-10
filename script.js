@@ -8,14 +8,14 @@ tombol.addEventListener('click', function() {
     let tinggiStatus = false, beratStatus = true;
 
     if(tinggi === '' || isNaN(tinggi) || (tinggi <= 0)) {
-        document.getElementById('tinggi_error').innerHTML = 'Masukan angka yang benar';
+        document.getElementById('tinggi_error').innerHTML = '';
     } else {
         document.getElementById('tinggi_error').innerHTML = '';
         tinggiStatus = true;
     }
 
     if(berat === '' || isNaN(berat) || (berat <= 0)) {
-        document.getElementById('berat_error').innerHTML = 'Masukan angka yang benar';
+        document.getElementById('berat_error').innerHTML = '';
     } else {
         document.getElementById('berat_error').innerHTML = '';
         beratStatus = true;
