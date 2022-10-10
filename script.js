@@ -32,7 +32,7 @@ tombol.addEventListener('click', function() {
             hasil.innerHTML = 'Berat badan kamu over (Over Weight) : ' + bmi; 
         }
     } else {
-        alert('Calculator ini error || Masukan angka yang valid');
+        alert('Masukan angka yang valid');
         hasil.innerHTML = '';
     }
 
