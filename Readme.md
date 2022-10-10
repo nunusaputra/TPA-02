@@ -1,0 +1,2 @@
+# Note
+Karena projek ini **belum responsive**, maka disarankan untuk membuka projek ini pada laptop atau komputer dengan **layar 14"**, display resolution **1920 x 1080**, dan **scale 100%** untuk mendapatkan tampilan yang maksimal.
